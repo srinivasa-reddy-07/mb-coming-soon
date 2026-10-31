@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Mamitha Nation</title>
+    <link rel="icon" type="image/svg+xml" href="/images/icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  </head>
+  <body>
+    <canvas id="gl"></canvas>
+    <div class="vig"></div>
+    <div class="grain"></div>
+    <div class="cur" id="cur">Reel</div>
+
+    <div class="pre" id="pre">
+      <span>Loading the reel</span>
+      <div class="n" id="num">00</div>
+    </div>
+
+    <main class="ui">
+      <header class="row">
+        <span><i data-up>— MAMITHA NATION</i></span>
+        <span class="hide-s"><i data-up class="dim">Est. 2026</i></span>
+        <span><i data-up id="clock">--:--</i></span>
+      </header>
+
+      <div class="mid">
+        <p class="name" data-fade>Mamitha Baiju<span>A fan tribute</span></p>
+        <h1 aria-label="Coming soon">
+          <span class="ln" data-split>Coming</span>
+          <span class="ln" data-split>Soon.</span>
+        </h1>
+      </div>
+
+      <div class="foot">
+        <p class="cap" data-fade>
+          The official home of the fans of <b>Mamitha Baiju</b>. Frames, video
+          edits, every character she has played, and a lot of love, all in one
+          place.
+        </p>
+        <div data-fade>
+          <div class="soon">
+            <span class="dot"></span><span id="status">Something special is on its way</span>
+          </div>
+          <div class="bar"><i></i></div>
+        </div>
+      </div>
+      <div style="height: 38px"></div>
+    </main>
+
+    <div class="mq" aria-hidden="true"><div id="mq"></div></div>
+
+    <!-- Link to external JS file -->
+    <script src="script.js"></script>
+  </body>
+</html>
